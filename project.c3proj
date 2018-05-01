@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 9800,
-	"name": "Nouveau projet",
+	"name": "Lolilolol",
 	"runtime": "c2",
 	"useWorker": false,
 	"bundleAddons": false,
@@ -21,6 +21,14 @@
 			"author": "Scirra",
 			"version": "r98",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r98",
+			"bundled": false
 		}
 	],
 	"uniqueId": "dlo73rnmq75",
@@ -28,7 +36,8 @@
 	"objectTypes": {
 		"items": [
 			"Texte",
-			"Bouton"
+			"Bouton",
+			"Sprite"
 		],
 		"subfolders": []
 	},
