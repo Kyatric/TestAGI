@@ -1,0 +1,40 @@
+{
+	"name": "Video",
+	"plugin-id": "video",
+	"sid": 933785940773388,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Reg_PosX",
+			"type": "number",
+			"desc": "",
+			"sid": 206601915022743
+		},
+		{
+			"name": "Reg_PosY",
+			"type": "number",
+			"desc": "",
+			"sid": 197521229307463
+		},
+		{
+			"name": "RegWidth",
+			"type": "number",
+			"desc": "",
+			"sid": 175399030018685
+		},
+		{
+			"name": "RegHeight",
+			"type": "number",
+			"desc": "",
+			"sid": 641007112378653
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 106341558655231
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,1889 @@
+{
+	"name": "esInterface_Video",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "LastMouseX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 263134754692086
+		},
+		{
+			"eventType": "variable",
+			"name": "LastMouseY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 337309747827882
+		},
+		{
+			"eventType": "variable",
+			"name": "BTN_PLAY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 445316775169515
+		},
+		{
+			"eventType": "variable",
+			"name": "BTN_PAUSE",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 128583642874676
+		},
+		{
+			"eventType": "variable",
+			"name": "BTN_REWIND",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 772233280676962
+		},
+		{
+			"eventType": "variable",
+			"name": "BTN_FASTFORWARD",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 341221310296179
+		},
+		{
+			"eventType": "variable",
+			"name": "BTN_FULLSCREEN",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 379030618284211
+		},
+		{
+			"eventType": "variable",
+			"name": "BTN_FULLREWIND",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 368189482398351
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 200964534700854
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 222240998435084,
+					"parameters": {
+						"name": "\"Display_Video\"",
+						"parameter-n": []
+					}
+				}
+			],
+			"sid": 194608311659173
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Interface_Video",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Interface_Video_Init",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-function",
+									"objectClass": "Function",
+									"sid": 358944114973244,
+									"parameters": {
+										"name": "\"Create_Interface\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 459563846809543,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 543472144140046,
+											"parameters": {
+												"object-to-create": "Under_Interface",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Under_Interface",
+											"sid": 167681371750631,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "25"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 144301276970410,
+											"parameters": {
+												"object-to-create": "Btn_Interface",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 507493119688298,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 392933893073359,
+											"parameters": {
+												"instance-variable": "Usage",
+												"value": "BTN_PLAY"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Btn_Interface",
+											"sid": 171964768602072,
+											"parameters": {
+												"frame-number": "BTN_PLAY"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 582011294801328,
+											"parameters": {
+												"object-to-create": "Btn_Interface",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 558540355967972,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 551239387899168,
+											"parameters": {
+												"instance-variable": "Usage",
+												"value": "BTN_REWIND"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Btn_Interface",
+											"sid": 261121527205957,
+											"parameters": {
+												"frame-number": "BTN_REWIND"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 682381337349177,
+											"parameters": {
+												"object-to-create": "Btn_Interface",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 170291245740660,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 307030337251432,
+											"parameters": {
+												"instance-variable": "Usage",
+												"value": "BTN_FASTFORWARD"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Btn_Interface",
+											"sid": 507108902018165,
+											"parameters": {
+												"frame-number": "BTN_FASTFORWARD"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 597935664858013,
+											"parameters": {
+												"object-to-create": "Btn_Interface",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 650639100537964,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 112868216337046,
+											"parameters": {
+												"instance-variable": "Usage",
+												"value": "BTN_FULLSCREEN"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Btn_Interface",
+											"sid": 964520029882666,
+											"parameters": {
+												"frame-number": "BTN_FULLSCREEN"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 957631996477764,
+											"parameters": {
+												"object-to-create": "Btn_Interface",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 590021175671649,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Btn_Interface",
+											"sid": 203407785836781,
+											"parameters": {
+												"instance-variable": "Usage",
+												"value": "BTN_FULLREWIND"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Btn_Interface",
+											"sid": 618384154115731,
+											"parameters": {
+												"frame-number": "BTN_FULLREWIND"
+											}
+										}
+									],
+									"sid": 602678465625788
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 489282447422807,
+											"parameters": {
+												"object-to-create": "Video_Fill_PlayBar",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Video_Fill_PlayBar",
+											"sid": 682493360074108,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 978715952662722,
+											"parameters": {
+												"object-to-create": "Video_PlayBar",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Video_PlayBar",
+											"sid": 621397312698748,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 453795029090218,
+											"parameters": {
+												"object-to-create": "Video_Handle_PlayBar",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Video_Handle_PlayBar",
+											"sid": 572838731052354,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										}
+									],
+									"sid": 387444531474342
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 788079844306089,
+											"parameters": {
+												"object-to-create": "Audio_Fill_PlayBar",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Audio_Fill_PlayBar",
+											"sid": 866703975923596,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 926279601246537,
+											"parameters": {
+												"object-to-create": "Audio_PlayBar",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Audio_PlayBar",
+											"sid": 513311474145333,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 882591430724257,
+											"parameters": {
+												"object-to-create": "Audio_Handle_PlayBar",
+												"layer": "Function.Param(0)",
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Audio_Handle_PlayBar",
+											"sid": 239067692676937,
+											"parameters": {
+												"instance-variable": "OpacityMaxFam",
+												"value": "100"
+											}
+										}
+									],
+									"sid": 996572427590532
+								}
+							]
+						}
+					],
+					"sid": 389135119489397
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 780095347616888,
+							"parameters": {
+								"name": "\"Display_Video\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 272998672703485,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 516880460613835,
+									"parameters": {
+										"first-value": "Browser.Platform",
+										"comparison": 0,
+										"second-value": "\"Mac\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-source",
+									"objectClass": "Video",
+									"sid": 325489911636152,
+									"parameters": {
+										"webm-source": "\"\"",
+										"ogg-theora-source": "\"\"",
+										"h264-source": "\"big-buck-bunny_trailer_480p.mov\""
+									}
+								}
+							],
+							"sid": 882426480615912
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 438610225190717
+								}
+							],
+							"actions": [
+								{
+									"id": "set-source",
+									"objectClass": "Video",
+									"sid": 725194232801154,
+									"parameters": {
+										"webm-source": "\"big-buck-bunny_trailer.webm\"",
+										"ogg-theora-source": "\"\"",
+										"h264-source": "\"\""
+									}
+								}
+							],
+							"sid": 168710646002543
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "Video",
+									"sid": 239412367841529,
+									"parameters": {
+										"width": "Self.RegWidth",
+										"height": "Self.RegHeight"
+									}
+								},
+								{
+									"id": "pause",
+									"objectClass": "Video",
+									"sid": 349263499231530
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Video",
+									"sid": 825612757880191,
+									"parameters": {
+										"x": "(LayoutWidth - Self.Width) / 2",
+										"y": "(LayoutHeight - Self.Height) / 2"
+									}
+								}
+							],
+							"sid": 335973374443856
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Btn_Interface",
+									"sid": 945554840923602,
+									"parameters": {
+										"instance-variable": "Usage",
+										"comparison": 0,
+										"value": "BTN_PLAY"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Btn_Interface",
+									"sid": 864229000356112,
+									"parameters": {
+										"frame-number": "BTN_PLAY"
+									}
+								}
+							],
+							"sid": 611083338605480
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 795719627545755,
+									"parameters": {
+										"name": "\"Display_Interface_Video\"",
+										"parameter-n": []
+									}
+								}
+							],
+							"sid": 908303139312194
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 420752944435851,
+							"parameters": {
+								"name": "\"Display_Interface_Video\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Under_Interface",
+							"sid": 214282873131158,
+							"parameters": {
+								"x": "Video.X"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Under_Interface",
+							"sid": 706788339268358,
+							"parameters": {
+								"y": "(Video.Y + Video.Height) - Self.Height/2"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "Under_Interface",
+							"sid": 894877659771201,
+							"parameters": {
+								"width": "Video.Width"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "UI_Vid",
+							"sid": 865276818948022,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "UI_Vid",
+							"sid": 790279167419589,
+							"parameters": {
+								"opacity": "Self.OpacityMaxFam"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "UI_Vid",
+							"sid": 827838515050767,
+							"parameters": {
+								"instance-variable": "IsHiddenFam",
+								"value": "false"
+							}
+						},
+						{
+							"id": "start-timer",
+							"objectClass": "Video",
+							"sid": 668948753673101,
+							"behaviorType": "Timer",
+							"parameters": {
+								"duration": "3",
+								"type": "once",
+								"tag": "\"Hide_Interface_Video\""
+							}
+						}
+					],
+					"sid": 861287901971135,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Btn_Interface",
+									"sid": 124680548955004,
+									"parameters": {
+										"instance-variable": "Usage",
+										"comparison": 0,
+										"value": "BTN_PLAY"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Btn_Interface",
+									"sid": 640525667695984,
+									"parameters": {
+										"x": "Under_Interface.X + Self.Width/2 + 24",
+										"y": "Under_Interface.Y"
+									}
+								}
+							],
+							"sid": 803677807164163
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Btn_Interface",
+									"sid": 419282256517363,
+									"parameters": {
+										"instance-variable": "Usage",
+										"comparison": 0,
+										"value": "BTN_REWIND"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Btn_Interface",
+									"sid": 218643725232861,
+									"parameters": {
+										"x": "Under_Interface.X + (Self.Width/2 + 24) * 2",
+										"y": "Under_Interface.Y"
+									}
+								}
+							],
+							"sid": 197820812837836
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Btn_Interface",
+									"sid": 883046025453651,
+									"parameters": {
+										"instance-variable": "Usage",
+										"comparison": 0,
+										"value": "BTN_FASTFORWARD"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Btn_Interface",
+									"sid": 929706998747215,
+									"parameters": {
+										"x": "Under_Interface.X + (Self.Width/2 + 24) * 3",
+										"y": "Under_Interface.Y"
+									}
+								}
+							],
+							"sid": 511300098430047
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Btn_Interface",
+									"sid": 561803060871509,
+									"parameters": {
+										"instance-variable": "Usage",
+										"comparison": 0,
+										"value": "BTN_FULLSCREEN"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Btn_Interface",
+									"sid": 540842667015938,
+									"parameters": {
+										"x": "Under_Interface.X + Under_Interface.Width - Self.Width / 2 - 24",
+										"y": "Under_Interface.Y"
+									}
+								}
+							],
+							"sid": 583965604360016
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Btn_Interface",
+									"sid": 927926349365281,
+									"parameters": {
+										"instance-variable": "Usage",
+										"comparison": 0,
+										"value": "BTN_FULLREWIND"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Btn_Interface",
+									"sid": 714698958412900,
+									"parameters": {
+										"x": "Under_Interface.X + (Self.Width/2 + 24) * 4",
+										"y": "Under_Interface.Y"
+									}
+								}
+							],
+							"sid": 297199537340447
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "Video_PlayBar",
+									"sid": 398909287478918,
+									"parameters": {
+										"x": "Under_Interface.X + 24"
+									}
+								},
+								{
+									"id": "set-y",
+									"objectClass": "Video_PlayBar",
+									"sid": 129023272656561,
+									"parameters": {
+										"y": "Under_Interface.Y - Under_Interface.Height/2 - Self.Height "
+									}
+								},
+								{
+									"id": "set-width",
+									"objectClass": "Video_PlayBar",
+									"sid": 372864040090134,
+									"parameters": {
+										"width": "Under_Interface.Width - 48"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Video_Fill_PlayBar",
+									"sid": 715280958724958,
+									"parameters": {
+										"instance-variable": "MaxWidth",
+										"value": "Video_PlayBar.Width"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 580881250568240,
+									"parameters": {
+										"name": "\"Update_Video_Fill_Playbar\"",
+										"parameter-n": []
+									}
+								}
+							],
+							"sid": 913052575698858
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-height",
+									"objectClass": "Audio_PlayBar",
+									"sid": 964726021917558,
+									"parameters": {
+										"height": "8"
+									}
+								},
+								{
+									"id": "set-width",
+									"objectClass": "Audio_PlayBar",
+									"sid": 236203794731920,
+									"parameters": {
+										"width": "128"
+									}
+								},
+								{
+									"id": "set-x",
+									"objectClass": "Audio_PlayBar",
+									"sid": 354512183254103,
+									"parameters": {
+										"x": "Under_Interface.X + Under_Interface.Width - 128 - Self.Width"
+									}
+								},
+								{
+									"id": "set-y",
+									"objectClass": "Audio_PlayBar",
+									"sid": 508007258145136,
+									"parameters": {
+										"y": "Under_Interface.Y"
+									}
+								},
+								{
+									"id": "set-height",
+									"objectClass": "Audio_Fill_PlayBar",
+									"sid": 877276274983469,
+									"parameters": {
+										"height": "Audio_PlayBar.Height"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Audio_Fill_PlayBar",
+									"sid": 674918100204323,
+									"parameters": {
+										"instance-variable": "MaxWidth",
+										"value": "Audio_PlayBar.Width"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Icon_Audio",
+									"sid": 548228969984380,
+									"parameters": {
+										"x": "Audio_PlayBar.X - 24 - Self.Width/2",
+										"y": "Under_Interface.Y"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 521364980127157,
+									"parameters": {
+										"name": "\"Update_Audio_Fill_Playbar\"",
+										"parameter-n": []
+									}
+								}
+							],
+							"sid": 184108955652451
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "Video",
+							"sid": 571216413312940,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"Hide_Interface_Video\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "restart-fade",
+							"objectClass": "UI_Vid",
+							"sid": 109514218770679,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "UI_Vid",
+							"sid": 818209007080111,
+							"parameters": {
+								"instance-variable": "IsHidingFam",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 783967429695771
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-out-finished",
+							"objectClass": "UI_Vid",
+							"sid": 679959845276491,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "UI_Vid",
+							"sid": 611888492281245,
+							"parameters": {
+								"instance-variable": "IsHidingFam",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "UI_Vid",
+							"sid": 594404161468503,
+							"parameters": {
+								"instance-variable": "IsHiddenFam",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 526527317689887,
+							"parameters": {
+								"cursor-style": "none"
+							}
+						}
+					],
+					"sid": 375830822994585
+				}
+			],
+			"sid": 406025036107188
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Button",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 440951865786610,
+							"parameters": {
+								"name": "\"Click_Button\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 477380534675723,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Btn_Interface",
+									"sid": 768904024289036,
+									"parameters": {
+										"unique-id": "Function.Param(0)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Btn_Interface",
+									"sid": 495645638412362,
+									"parameters": {
+										"animation": "\"Clicked\"",
+										"from": "current-frame"
+									}
+								},
+								{
+									"id": "start-timer",
+									"objectClass": "Btn_Interface",
+									"sid": 216658988850955,
+									"behaviorType": "Timer",
+									"parameters": {
+										"duration": "0.25",
+										"type": "once",
+										"tag": "\"BackFromClick\""
+									}
+								}
+							],
+							"sid": 287565817328374
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-timer",
+							"objectClass": "Btn_Interface",
+							"sid": 583331474228144,
+							"behaviorType": "Timer",
+							"parameters": {
+								"tag": "\"BackFromClick\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Btn_Interface",
+							"sid": 228299600636712,
+							"parameters": {
+								"animation": "\"Regular\"",
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 499278438662768
+				}
+			],
+			"sid": 804331103166760
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Video_PlayBar",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 473464941010046,
+							"parameters": {
+								"name": "\"Update_Video_Fill_PlayBar\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Video_Fill_PlayBar",
+							"sid": 720366497392631,
+							"parameters": {
+								"object": "Video_PlayBar",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "Video_Fill_PlayBar",
+							"sid": 601501566603465,
+							"parameters": {
+								"width": "clamp((Self.MaxWidth / Video.Duration) * Video.PlaybackTime,0,Self.MaxWidth)"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Video_Handle_PlayBar",
+							"sid": 397012181186297,
+							"parameters": {
+								"object": "Video_Fill_PlayBar",
+								"image-point-optional": "1"
+							}
+						}
+					],
+					"sid": 215708436479383
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "Video",
+							"sid": 697492335753776
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 677009335699763,
+							"parameters": {
+								"name": "\"Update_Video_Fill_Playbar\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 445676709244450
+				}
+			],
+			"sid": 128817366760681
+		},
+		{
+			"eventType": "variable",
+			"name": "Audio_Amplitude",
+			"type": "number",
+			"initialValue": "30",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 737306319115326
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Audio_PlayBar",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 219578742674574,
+							"parameters": {
+								"name": "\"Update_Audio_Fill_PlayBar\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Audio_Fill_PlayBar",
+							"sid": 372282153419855,
+							"parameters": {
+								"object": "Audio_PlayBar",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "Audio_Fill_PlayBar",
+							"sid": 258468279882443,
+							"parameters": {
+								"width": "clamp(Audio_PlayBar.Width - (Self.MaxWidth / Audio_Amplitude) * abs(Video.Volume),0,Self.MaxWidth)"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Audio_Handle_PlayBar",
+							"sid": 813881506680090,
+							"parameters": {
+								"object": "Audio_Fill_PlayBar",
+								"image-point-optional": "1"
+							}
+						}
+					],
+					"sid": 145156383633100,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-width",
+									"objectClass": "Audio_Fill_PlayBar",
+									"sid": 393403660048881,
+									"parameters": {
+										"comparison": 5,
+										"width": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Icon_Audio",
+									"sid": 891338527075964,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 475996720561669
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 902103976499384
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Icon_Audio",
+									"sid": 713841373628796,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 873989405902980
+						}
+					]
+				}
+			],
+			"sid": 853585900840443
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Input",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 307601151902366,
+							"parameters": {
+								"object": "Video"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 210639110320592,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 785517611911403,
+									"parameters": {
+										"first-value": "Mouse.X",
+										"comparison": 1,
+										"second-value": "LastMouseX"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 724019162348403,
+									"parameters": {
+										"first-value": "Mouse.Y",
+										"comparison": 1,
+										"second-value": "LastMouseY"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 173440564647698,
+									"parameters": {
+										"name": "\"Display_Interface_Video\"",
+										"parameter-n": []
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 531854789903757,
+									"parameters": {
+										"variable": "LastMouseX",
+										"value": "Mouse.X"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 722103180389183,
+									"parameters": {
+										"variable": "LastMouseY",
+										"value": "Mouse.Y"
+									}
+								},
+								{
+									"id": "set-cursor-style",
+									"objectClass": "Mouse",
+									"sid": 562514662416999,
+									"parameters": {
+										"cursor-style": "normal"
+									}
+								}
+							],
+							"sid": 125534428498233,
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 319713163385827
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 328143522563465,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 567957987963983
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 824846976771891,
+							"parameters": {
+								"object": "Btn_Interface"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Btn_Interface",
+							"sid": 498442709241191,
+							"parameters": {
+								"instance-variable": "IsHiddenFam"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 496251142217463,
+							"parameters": {
+								"name": "\"Click_Button\"",
+								"parameter-n": [
+									"Btn_Interface.UID"
+								]
+							}
+						}
+					],
+					"sid": 493781745064501,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Btn_Interface",
+									"sid": 970684477522793,
+									"parameters": {
+										"comparison": 0,
+										"number": "BTN_PLAY"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Video",
+									"sid": 772775821335222
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Btn_Interface",
+									"sid": 941523670553977,
+									"parameters": {
+										"frame-number": "BTN_PAUSE"
+									}
+								}
+							],
+							"sid": 684287624304274
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 186831973696849
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Btn_Interface",
+									"sid": 592121858425296,
+									"parameters": {
+										"comparison": 0,
+										"number": "BTN_PAUSE"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "pause",
+									"objectClass": "Video",
+									"sid": 185085632708846
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Btn_Interface",
+									"sid": 804233700542679,
+									"parameters": {
+										"frame-number": "BTN_PLAY"
+									}
+								}
+							],
+							"sid": 218440902382551
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Btn_Interface",
+									"sid": 401391649898038,
+									"parameters": {
+										"comparison": 0,
+										"number": "BTN_FASTFORWARD"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-playback-time",
+									"objectClass": "Video",
+									"sid": 802332787075177,
+									"parameters": {
+										"time": "Video.PlaybackTime + 2"
+									}
+								}
+							],
+							"sid": 873960837453440
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Btn_Interface",
+									"sid": 961666395433609,
+									"parameters": {
+										"comparison": 0,
+										"number": "BTN_REWIND"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-playback-time",
+									"objectClass": "Video",
+									"sid": 935357407600935,
+									"parameters": {
+										"time": "Video.PlaybackTime - 2"
+									}
+								}
+							],
+							"sid": 315955948403883
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Btn_Interface",
+									"sid": 304217131994859,
+									"parameters": {
+										"comparison": 0,
+										"number": "BTN_FULLSCREEN"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 241463877934224,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-fullscreen",
+											"objectClass": "Browser",
+											"sid": 921388597763551
+										}
+									],
+									"actions": [
+										{
+											"id": "cancel-fullscreen",
+											"objectClass": "Browser",
+											"sid": 867798654691215
+										},
+										{
+											"id": "set-size",
+											"objectClass": "Video",
+											"sid": 661894470672057,
+											"parameters": {
+												"width": "Self.RegWidth",
+												"height": "Self.RegHeight"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "Video",
+											"sid": 190979409039735,
+											"parameters": {
+												"x": "(LayoutWidth - Self.Width) / 2",
+												"y": "(LayoutHeight - Self.Height) / 2"
+											}
+										},
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 490501558838473,
+											"parameters": {
+												"name": "\"Display_Interface_Video\"",
+												"parameter-n": []
+											}
+										}
+									],
+									"sid": 129333789865075
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 886629339973701
+										}
+									],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "Video",
+											"sid": 704354033390478,
+											"parameters": {
+												"width": "LayoutWidth",
+												"height": "LayoutHeight"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "Video",
+											"sid": 445505349506567,
+											"parameters": {
+												"x": "0",
+												"y": "0"
+											}
+										},
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 113137953580650,
+											"parameters": {
+												"name": "\"Display_Interface_Video\"",
+												"parameter-n": []
+											}
+										},
+										{
+											"id": "request-fullscreen",
+											"objectClass": "Browser",
+											"sid": 425557216530054,
+											"parameters": {
+												"mode": "stretch-letterbox-scale"
+											}
+										}
+									],
+									"sid": 263376105696585
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Btn_Interface",
+									"sid": 132385126174641,
+									"parameters": {
+										"comparison": 0,
+										"number": "BTN_FULLREWIND"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-playback-time",
+									"objectClass": "Video",
+									"sid": 528156092747553,
+									"parameters": {
+										"time": "0"
+									}
+								}
+							],
+							"sid": 108289292640590
+						}
+					]
+				},
+				{
+					"eventType": "variable",
+					"name": "DistanceClick",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 255677102828619
+				},
+				{
+					"eventType": "comment",
+					"text": "Barre de lecture de la vidéo"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-in-touch",
+							"objectClass": "Touch",
+							"sid": 253424965730153
+						},
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 930444681646931,
+							"parameters": {
+								"object": "Video_PlayBar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 591216002621474,
+							"parameters": {
+								"variable": "DistanceClick",
+								"value": "Touch.X - Video_PlayBar.X"
+							}
+						},
+						{
+							"id": "set-playback-time",
+							"objectClass": "Video",
+							"sid": 253233873377439,
+							"parameters": {
+								"time": "(Video.Duration/Video_Fill_PlayBar.MaxWidth) * DistanceClick"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 813665879627002,
+							"parameters": {
+								"name": "\"Update_Video_Fill_Playbar\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 227415347306451
+				},
+				{
+					"eventType": "comment",
+					"text": "Barre du volume audio"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-in-touch",
+							"objectClass": "Touch",
+							"sid": 423404389353021
+						},
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 968291006749705,
+							"parameters": {
+								"object": "Audio_PlayBar"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 839194055481688,
+							"parameters": {
+								"variable": "DistanceClick",
+								"value": "Touch.X - Audio_PlayBar.X"
+							}
+						},
+						{
+							"id": "set-volume",
+							"objectClass": "Video",
+							"sid": 542266755133215,
+							"parameters": {
+								"volume": "((Audio_Amplitude/Audio_Fill_PlayBar.MaxWidth) * (Audio_Fill_PlayBar.MaxWidth - DistanceClick)) *-1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 694156058880876,
+							"parameters": {
+								"name": "\"Update_Audio_Fill_Playbar\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 349425272097905
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-mobile-device",
+							"objectClass": "System",
+							"sid": 581379895394831
+						}
+					],
+					"actions": [],
+					"sid": 940853529583556,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 412480753969455,
+									"parameters": {
+										"object": "Video"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 751221184518213,
+									"parameters": {
+										"name": "\"Display_Interface_Video\"",
+										"parameter-n": []
+									}
+								}
+							],
+							"sid": 634854903424445
+						}
+					]
+				}
+			],
+			"sid": 187789364219542
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 491473875455777,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 184243333335190,
+					"parameters": {
+						"type": "log",
+						"message": "Video.Volume"
+					}
+				}
+			],
+			"sid": 936495817025179
+		}
+	],
+	"sid": 660455641337397
+}

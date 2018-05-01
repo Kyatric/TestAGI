@@ -1,0 +1,55 @@
+{
+	"name": "UI_Vid",
+	"plugin-id": "Sprite",
+	"sid": 248318420312280,
+	"instanceVariables": [
+		{
+			"name": "IsHidingFam",
+			"type": "boolean",
+			"desc": "",
+			"sid": 879177229834341
+		},
+		{
+			"name": "IsHiddenFam",
+			"type": "boolean",
+			"desc": "",
+			"sid": 134655429456258
+		},
+		{
+			"name": "IsClickableFam",
+			"type": "boolean",
+			"desc": "",
+			"sid": 752655560947168
+		},
+		{
+			"name": "OpacityMaxFam",
+			"type": "number",
+			"desc": "",
+			"sid": 138845579498130
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 765870678156828
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 392676666649453
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Under_Interface",
+		"Btn_Interface",
+		"Video_Fill_PlayBar",
+		"Video_Handle_PlayBar",
+		"Video_PlayBar",
+		"Audio_PlayBar",
+		"Audio_Fill_PlayBar",
+		"Audio_Handle_PlayBar",
+		"Icon_Audio"
+	]
+}
