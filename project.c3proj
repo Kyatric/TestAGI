@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 9800,
-	"name": "Lolilolol",
+	"name": "Video Interface",
 	"runtime": "c2",
 	"useWorker": false,
 	"bundleAddons": false,
@@ -10,6 +10,13 @@
 			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
+			"author": "Scirra",
+			"version": "r98",
+			"bundled": false
+		},{
+			"type": "plugin",
+			"id": "video",
+			"name": "Vidéo",
 			"author": "Scirra",
 			"version": "r98",
 			"bundled": false
@@ -29,6 +36,54 @@
 			"author": "Scirra",
 			"version": "r98",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Fonction",
+			"author": "Scirra",
+			"version": "r98",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Souris",
+			"author": "Scirra",
+			"version": "r98",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Navigateur",
+			"author": "Scirra",
+			"version": "r98",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Toucher",
+			"author": "Scirra",
+			"version": "r98",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Minuteur",
+			"author": "Scirra",
+			"version": "r98",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fondu",
+			"author": "Scirra",
+			"version": "r98",
+			"bundled": false
 		}
 	],
 	"uniqueId": "dlo73rnmq75",
@@ -37,24 +92,41 @@
 		"items": [
 			"Texte",
 			"Bouton",
-			"Roland"
+			"Roland",
+			"Video",
+			"Btn_Interface",
+			"Function",
+			"Mouse",
+			"Under_Interface",
+			"Browser",
+			"Video_PlayBar",
+			"Video_Fill_PlayBar",
+			"Video_Handle_PlayBar",
+			"Icon_Audio",
+			"Audio_PlayBar",
+			"Audio_Fill_PlayBar",
+			"Audio_Handle_PlayBar",
+			"Touch"
 		],
 		"subfolders": []
 	},
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"UI_Vid"
+		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"LInterface_Video"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet"
+			"esInterface_Video"
 		],
 		"subfolders": []
 	},
@@ -109,7 +181,16 @@
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "big-buck-bunny_trailer.webm",
+					"type": "video/webm"
+				},
+				{
+					"name": "big-buck-bunny_trailer_480p.mov",
+					"type": "video/quicktime"
+				}
+			],
 			"subfolders": []
 		}
 	},
@@ -120,7 +201,7 @@
 		"authorEmail": "",
 		"authorWebsite": "",
 		"appId": "",
-		"pixelRounding": false,
+		"pixelRounding": true,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-scale",
 		"fullscreenQuality": "high",
