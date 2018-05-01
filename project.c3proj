@@ -126,6 +126,7 @@
 	},
 	"eventSheets": {
 		"items": [
+			"event sheet",
 			"esInterface_Video"
 		],
 		"subfolders": []
