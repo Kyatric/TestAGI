@@ -9,7 +9,7 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texte",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r98",
 			"bundled": false
@@ -17,7 +17,7 @@
 		{
 			"type": "plugin",
 			"id": "Button",
-			"name": "Bouton",
+			"name": "Button",
 			"author": "Scirra",
 			"version": "r98",
 			"bundled": false
@@ -37,7 +37,7 @@
 		"items": [
 			"Texte",
 			"Bouton",
-			"Sprite"
+			"Roland"
 		],
 		"subfolders": []
 	},
@@ -48,13 +48,13 @@
 	},
 	"layouts": {
 		"items": [
-			"Scène 1"
+			"Layout 1"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Feuille d'Evènements 1"
+			"Event sheet"
 		],
 		"subfolders": []
 	},
